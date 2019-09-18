@@ -27,9 +27,9 @@ const Friends = props => {
       <h2>Friends</h2>
       <FriendsForm submitFriend={addFriend}/>
       {friends.map(i => {
-            return <div> <h3> key={i.id}{i.name}</h3>
-                              <h3> key={i.id}{i.age}</h3>
-                              <h3> key={i.id}{i.email}</h3>
+            return <div key={i.id}> <h3 >{i.name}</h3>
+                              <h3>{i.age}</h3>
+                              <h3>{i.email}</h3>
             
 
             </div>
